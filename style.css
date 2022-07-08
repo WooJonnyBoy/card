@@ -6,7 +6,7 @@
 }
 
 .conteiner {
-  width: 0 auto;
+  margin: 0 auto;
   height: 100vh;
   background: linear-gradient(0deg, rgb(137, 30, 3), rgb(228, 244, 4));
 }
