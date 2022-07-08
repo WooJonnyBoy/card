@@ -20,7 +20,7 @@
 function remove(elem) {
     setTimeout(()=> {
         elem.remove()
-    }, random(1000, 20000)) 
+    }, random(1000, 2000)) 
 }
 
 function random(min, max) {
