@@ -13,14 +13,14 @@
         boxinner.style.backgroundColor = `rgb(${random(0, 255)}, ${random(0, 255)}, ${random(0, 255)})`
         cont.append(div)
         div.append(boxinner)
-        remove(div)
+        remove(div, random(2000, 3000))
     }
 })();
 
-function remove(elem) {
+function remove(elem, time) {
     setTimeout(()=> {
         elem.remove()
-    }, random(1000, 2000)) 
+    }, time) 
 }
 
 function random(min, max) {
