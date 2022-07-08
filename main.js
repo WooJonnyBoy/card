@@ -1,9 +1,9 @@
 
 
 (function() {
-    document.addEventListener('click', bolloons)
+    document.addEventListener('click', balloons)
     let cont = document.querySelector('.conteiner')
-    function bolloons(e) {
+    function balloons(e) {
         let boxinner = document.createElement('div')
         let div = document.createElement('div')
         boxinner.className = 'boxinner'
