@@ -2,13 +2,13 @@
 (function() {
     document.addEventListener('click', balloons)
     let cont = document.querySelector('.conteiner')
-    let letter = 'абвгдеёжзийклмнопрстуфхчцшщьъэюя'
+    let letter = 'абвгґдеєжзіїйклмнопрстуфхчцшщьюя'
     function balloons(e) {
         let boxinner = document.createElement('div')
         let div = document.createElement('div')
         let arlet = Array.from(letter.toUpperCase())
         boxinner.className = 'boxinner'
-        boxinner.textContent = arlet[random(0, 31)]
+        boxinner.textContent = arlet[random(0, 32)]
         div.className = 'box'
         div.style.top = `${e.clientY - 80}px`
         div.style.left = `${e.clientX - 80}px`
