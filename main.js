@@ -1,19 +1,21 @@
 
-
 (function() {
     document.addEventListener('click', balloons)
     let cont = document.querySelector('.conteiner')
+    let letter = 'абвгдеёжзийклмнопрстуфхчцшщьъэюя'
     function balloons(e) {
         let boxinner = document.createElement('div')
         let div = document.createElement('div')
+        let arlet = Array.from(letter.toUpperCase())
         boxinner.className = 'boxinner'
+        boxinner.textContent = arlet[random(0, 31)]
         div.className = 'box'
         div.style.top = `${e.clientY - 80}px`
         div.style.left = `${e.clientX - 80}px`
         boxinner.style.backgroundColor = `rgb(${random(0, 255)}, ${random(0, 255)}, ${random(0, 255)})`
         cont.append(div)
         div.append(boxinner)
-        remove(div, random(2000, 3000))
+        remove(div, random(2000, 4000))
     }
 })();
 
