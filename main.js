@@ -2,7 +2,7 @@
 (function() {
     document.addEventListener('click', balloons)
     let cont = document.querySelector('.conteiner')
-    let letter = 'абвгґдеєжзіїйклмнопрстуфхчцшщьюя'
+    let letter = 'абвгґдеєжзиіїйклмнопрстуфхчцшщьюя'
     function balloons(e) {
         let boxinner = document.createElement('div')
         let div = document.createElement('div')
