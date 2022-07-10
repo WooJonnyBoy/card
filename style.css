@@ -3,7 +3,10 @@
   margin: 0;
   box-sizing: border-box;
   overflow: hidden;
-  padding-top: env(safe-area-inset-top), 0;
+}
+
+body {
+padding-top: env(safe-area-inset-top), -30px;
 }
 
 .conteiner {
