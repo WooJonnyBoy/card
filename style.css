@@ -50,6 +50,10 @@
   -webkit-animation: add 1s;
           animation: add 1s;
   opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
 }
 .boxinner::before {
   content: "";
@@ -66,19 +70,23 @@
   0% {
     width: 0rem;
     height: 0rem;
+    font-size: 0;
   }
   100% {
     width: 10rem;
     height: 10rem;
+    font-size: 6rem;
   }
 }
 @keyframes add {
   0% {
     width: 0rem;
     height: 0rem;
+    font-size: 0;
   }
   100% {
     width: 10rem;
     height: 10rem;
+    font-size: 6rem;
   }
 }
